@@ -66,3 +66,38 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+ul {
+  list-style: none;
+}
+
+.castImg {
+  width: 80px;
+  display: block;
+}
+
+.castList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.castItem {
+  width: 90px;
+}
+
+.reviewsItem {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.author{
+  display: block;
+  font-weight: 700;
+}
+
+.movieInfoContainer {
+  display: flex;
+  gap: 30px;
+}
