@@ -13,18 +13,19 @@ export default function MovieInfo({ movie }) {
             <img src={movie.poster_path ?
                 `https://image.tmdb.org/t/p/w500${movie.poster_path}` 
             : defaultImg}
-                alt={movie.title} /> 
+                alt={movie.title} width={600}/> 
             <div>
                    <h1>{movie.title}</h1>  
             <h2>Overview</h2>
             <p>{movie.overview}</p>
             <h2>Genres</h2>
                 <ul>
-                    if (genres !== 0) 
-                    { 
+                    {genres?.length > 0 &&
+                    
                         genres.map((genre) => {
-           <li key={genre.id}>{genre.name}</li>
-          })}
+                           return <li key={genre.id}>{genre.name}</li>
+                        })
+                    }
                 
        
         </ul> 
